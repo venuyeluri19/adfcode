@@ -1,0 +1,21 @@
+{
+	"name": "newadf018",
+	"properties": {
+		"globalParameters": {
+			"waitimt": {
+				"type": "int",
+				"value": 3
+			}
+		},
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e841cda2-fa25-4bb3-b376-9682c73a78f1",
+		"tenantId": "048029a5-1560-44a2-91cf-f65df44e143a"
+	}
+}

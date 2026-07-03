@@ -1,0 +1,17 @@
+{
+	"name": "AzureSqlDatabase1212",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "testserver12301.database.windows.net",
+			"database": "db01234",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "vera",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDVCNDZDMzY2LTQwMTItNDFGOC04QjQ2LUQyNDVDQ0UwOTZFM19kMTA5ZTYwMS1iYjI1LTQ0YzYtODg0My0yZGVmNzViMTFhNTMiDQp9"
+		}
+	}
+}

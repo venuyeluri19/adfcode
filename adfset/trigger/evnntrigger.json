@@ -1,0 +1,24 @@
+{
+	"name": "evnntrigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "evntpipline",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/targetee/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/24bd5821-d69b-4ab2-8dcf-98459138d177/resourceGroups/newbatch/providers/Microsoft.Storage/storageAccounts/newoneee223",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

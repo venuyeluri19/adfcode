@@ -1,0 +1,11 @@
+{
+	"name": "Keyvault1_ls",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://batchkey12.vault.azure.net/"
+		}
+	}
+}

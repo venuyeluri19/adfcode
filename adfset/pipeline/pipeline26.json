@@ -1,0 +1,22 @@
+{
+	"name": "pipeline26",
+	"properties": {
+		"activities": [
+			{
+				"name": "Wait1",
+				"type": "Wait",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": {
+						"value": "@pipeline().globalParameters.waitimt",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2026-06-30T12:59:02Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

@@ -1,0 +1,24 @@
+{
+	"name": "LS_Keyval",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "testserver12301.database.windows.net",
+			"database": "db01234",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "vera",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "Keyvault1_ls",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "vera"
+			}
+		}
+	}
+}

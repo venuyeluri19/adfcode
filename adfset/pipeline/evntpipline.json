@@ -1,0 +1,19 @@
+{
+	"name": "evntpipline",
+	"properties": {
+		"activities": [
+			{
+				"name": "Wait1",
+				"type": "Wait",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 1
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2026-07-03T09:50:13Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
