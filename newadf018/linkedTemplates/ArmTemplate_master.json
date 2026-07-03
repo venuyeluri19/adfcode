@@ -1,0 +1,195 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "newadf018"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
+		},
+		"AzureSqlDatabase1212_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'AzureSqlDatabase1212'"
+		},
+		"AzureSqlDatabase1_111_sql_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'AzureSqlDatabase1_111_sql'"
+		},
+		"LS_src_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_src'"
+		},
+		"linedsrvce_02_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'linedsrvce_02'"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://newoneee223.dfs.core.windows.net/"
+		},
+		"AzureSqlDatabase1212_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "testserver12301.database.windows.net"
+		},
+		"AzureSqlDatabase1212_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "db01234"
+		},
+		"AzureSqlDatabase1212_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "vera"
+		},
+		"AzureSqlDatabase1_111_sql_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "testserver12301.database.windows.net"
+		},
+		"AzureSqlDatabase1_111_sql_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "db01234"
+		},
+		"AzureSqlDatabase1_111_sql_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "vera"
+		},
+		"Keyvault1_ls_properties_typeProperties_baseUrl": {
+			"type": "string",
+			"defaultValue": "https://batchkey12.vault.azure.net/"
+		},
+		"LS_Keyval_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "testserver12301.database.windows.net"
+		},
+		"LS_Keyval_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "db01234"
+		},
+		"LS_Keyval_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "vera"
+		},
+		"LS_src_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://batch243.dfs.core.windows.net/"
+		},
+		"linedsrvce_02_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://batch243.dfs.core.windows.net/"
+		},
+		"evnntrigger_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/24bd5821-d69b-4ab2-8dcf-98459138d177/resourceGroups/newbatch/providers/Microsoft.Storage/storageAccounts/newoneee223"
+		},
+		"containerUri": {
+			"type": "string",
+			"metadata": "URI to storage account containing linked ARM templates"
+		},
+		"containerSasToken": {
+			"type": "string",
+			"metadata": "Sas token to storage account containing linked ARM templates"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "newadf018_ArmTemplate_0",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_0.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"AzureDataLakeStorage1_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
+					},
+					"AzureSqlDatabase1212_password": {
+						"value": "[parameters('AzureSqlDatabase1212_password')]"
+					},
+					"AzureSqlDatabase1_111_sql_password": {
+						"value": "[parameters('AzureSqlDatabase1_111_sql_password')]"
+					},
+					"LS_src_accountKey": {
+						"value": "[parameters('LS_src_accountKey')]"
+					},
+					"linedsrvce_02_accountKey": {
+						"value": "[parameters('linedsrvce_02_accountKey')]"
+					},
+					"AzureDataLakeStorage1_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
+					},
+					"AzureSqlDatabase1212_properties_typeProperties_server": {
+						"value": "[parameters('AzureSqlDatabase1212_properties_typeProperties_server')]"
+					},
+					"AzureSqlDatabase1212_properties_typeProperties_database": {
+						"value": "[parameters('AzureSqlDatabase1212_properties_typeProperties_database')]"
+					},
+					"AzureSqlDatabase1212_properties_typeProperties_userName": {
+						"value": "[parameters('AzureSqlDatabase1212_properties_typeProperties_userName')]"
+					},
+					"AzureSqlDatabase1_111_sql_properties_typeProperties_server": {
+						"value": "[parameters('AzureSqlDatabase1_111_sql_properties_typeProperties_server')]"
+					},
+					"AzureSqlDatabase1_111_sql_properties_typeProperties_database": {
+						"value": "[parameters('AzureSqlDatabase1_111_sql_properties_typeProperties_database')]"
+					},
+					"AzureSqlDatabase1_111_sql_properties_typeProperties_userName": {
+						"value": "[parameters('AzureSqlDatabase1_111_sql_properties_typeProperties_userName')]"
+					},
+					"Keyvault1_ls_properties_typeProperties_baseUrl": {
+						"value": "[parameters('Keyvault1_ls_properties_typeProperties_baseUrl')]"
+					},
+					"LS_src_properties_typeProperties_url": {
+						"value": "[parameters('LS_src_properties_typeProperties_url')]"
+					},
+					"linedsrvce_02_properties_typeProperties_url": {
+						"value": "[parameters('linedsrvce_02_properties_typeProperties_url')]"
+					}
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "newadf018_ArmTemplate_1",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"LS_Keyval_properties_typeProperties_server": {
+						"value": "[parameters('LS_Keyval_properties_typeProperties_server')]"
+					},
+					"LS_Keyval_properties_typeProperties_database": {
+						"value": "[parameters('LS_Keyval_properties_typeProperties_database')]"
+					},
+					"LS_Keyval_properties_typeProperties_userName": {
+						"value": "[parameters('LS_Keyval_properties_typeProperties_userName')]"
+					},
+					"evnntrigger_properties_typeProperties_scope": {
+						"value": "[parameters('evnntrigger_properties_typeProperties_scope')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'newadf018_ArmTemplate_0')]"
+			]
+		}
+	]
+}

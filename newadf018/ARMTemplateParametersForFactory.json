@@ -1,0 +1,66 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "newadf018"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureSqlDatabase1212_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_111_sql_password": {
+			"value": ""
+		},
+		"LS_src_accountKey": {
+			"value": ""
+		},
+		"linedsrvce_02_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://newoneee223.dfs.core.windows.net/"
+		},
+		"AzureSqlDatabase1212_properties_typeProperties_server": {
+			"value": "testserver12301.database.windows.net"
+		},
+		"AzureSqlDatabase1212_properties_typeProperties_database": {
+			"value": "db01234"
+		},
+		"AzureSqlDatabase1212_properties_typeProperties_userName": {
+			"value": "vera"
+		},
+		"AzureSqlDatabase1_111_sql_properties_typeProperties_server": {
+			"value": "testserver12301.database.windows.net"
+		},
+		"AzureSqlDatabase1_111_sql_properties_typeProperties_database": {
+			"value": "db01234"
+		},
+		"AzureSqlDatabase1_111_sql_properties_typeProperties_userName": {
+			"value": "vera"
+		},
+		"Keyvault1_ls_properties_typeProperties_baseUrl": {
+			"value": "https://batchkey12.vault.azure.net/"
+		},
+		"LS_Keyval_properties_typeProperties_server": {
+			"value": "testserver12301.database.windows.net"
+		},
+		"LS_Keyval_properties_typeProperties_database": {
+			"value": "db01234"
+		},
+		"LS_Keyval_properties_typeProperties_userName": {
+			"value": "vera"
+		},
+		"LS_src_properties_typeProperties_url": {
+			"value": "https://batch243.dfs.core.windows.net/"
+		},
+		"linedsrvce_02_properties_typeProperties_url": {
+			"value": "https://batch243.dfs.core.windows.net/"
+		},
+		"evnntrigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/24bd5821-d69b-4ab2-8dcf-98459138d177/resourceGroups/newbatch/providers/Microsoft.Storage/storageAccounts/newoneee223"
+		}
+	}
+}
