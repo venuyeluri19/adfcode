@@ -1,0 +1,19 @@
+{
+	"name": "MetadataDrivenCopyTask_lc2_ControlDS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Keyval",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "MetadataDrivenCopyTask_lc2_20260704"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "batch20sc",
+			"table": "MainControlTable_lc2"
+		}
+	}
+}
